@@ -1,0 +1,19 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initialize a repository Git puts a .git file that contains meta data
+that Git needs to manage your repository. Without telling Git that a particular
+directory is a repository, Git could not know that it was supposed to be one.
+Moreover, every repository has its own settings, I presume, and so Git has to
+have some way of keeping track of those settings. I presume this is information
+is held in the .git file.
+
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+The staging area is a workspace while the repository represents work that is
+being stored and the working directory represents work that is being considered
+for storing in the repository. So that is how they are different. The value of
+this workspace is that we have a place to put files we are not ready to commit
+but at the same time need to work on and save in the staging area and then
+commit them when (and only when) we are done.
