@@ -17,3 +17,52 @@ for storing in the repository. So that is how they are different. The value of
 this workspace is that we have a place to put files we are not ready to commit
 but at the same time need to work on and save in the staging area and then
 commit them when (and only when) we are done.
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+If I have multiple files checked out they will be in the working directory.
+If git commit ran on all files in the working directory I would have no way
+keeping files I did not want to commit separate from ones I did want to commit.
+The staging area forces the git user to add a file to the staging area as an
+additional step before committing thus putting which files are committed from
+within the working directory in the hands of the git user.
+
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+Branching could be useful for keeping the code history organized by allowing for
+ series of changes to be isolated from each other. With just separate commits
+it would not be possible to make a series of changes that may or may not make
+it into the final product without hand managing the code commits. You would
+have to remember which commit you branched off from and then go back to it.
+With branching you can have git remember for you.
+
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams helped me build an overall knowledge of the layout of a git
+repository. While the git commit command shows each commit in a list, it does
+not give the overall structure of git especially in regards to different
+branches. So that is how the diagrams helped me.
+
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+The result of merging two branches together is that one branch get combined with
+ another. The branches are specified in the diagram with branch that is being
+merged as subordinate to the branch that it is being merged into so as to inform
+ the viewer that this branch is the one being kept.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+The pros of Git's automatic merging are that it is done, well, automatically, so
+you don't have to do much of anything yourself, Git takes care of it all for
+you. The cons of automatic merging occur when you have conflicts. Git cannot
+figure out how to resolve these conflicts automatically so it is very good that
+Git provides a way for the user of the program to manually resolve conflicts.

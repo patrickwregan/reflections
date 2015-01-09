@@ -36,7 +36,7 @@ you might end up with large amounts of commits that are hard to distinguish from
 Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
-I think that Git allows saving mutliple files in one commit because a program
+I think that Git allows saving multiple files in one commit because a program
 usually spans several files and altering one file frequently requires altering
 another. I think that the Google Docs programmers did not add this feature to
 their program because the thought that no one would make interdependent
@@ -64,3 +64,8 @@ could break something?
 Since old versions of my code are saved for me by Git, if I make a mistake I
 don't have to worry about the incorrect code overriding my correct code. This
 would make me more likely to try new things.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I would like to use Git to program a website to help students learn mathematics.
