@@ -1,7 +1,71 @@
-When would you want to use a remote repository rather than keeping all your work local?
+When would you want to use a remote repository rather than keeping all your work
+ local?
 
-You would want to use a remote repository if you were collaborating with someone else 
-over the internet. Also, you might use a remote repository if you were worried about 
-the possibility of your computer failing and wanted a redundant copy of your work 
-available on another computer.
+You would want to use a remote repository if you were collaborating with someone
+  else over the internet. Also, you might use a remote repository if you were
+  worried about the possibility of your computer failing and wanted a redundant
+  copy of your work available on another computer.
 
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+There are two reasons. One, you might want to discard a change done by someone
+else. Also, you might want to add changes of your own to a copy of the remote
+just to try something out.
+
+
+Describe the differences between forks, clones, and branches. When would you use
+  one instead of another?
+
+A branch is the creation of a new copy of the code which is done on the local
+computer and is visible only to those using your computer. A fork is an entire
+copy of code that is visible to remote users. The fork links back to the
+original fork. You can do anything you want with the fork without changing the
+original. A clone occurs when you copy a project down to your computer from
+github or you make a copy on your local computer.
+
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+The benefit of having a copy of the last known state of the remote stored
+locally usually arises when you have to be away from the remote for awhile.
+When you come back, you can determine changes that have occured on the remote
+by comparing (diff) your copy of the remote with the one online. Then, after,
+working out everything you can merge your own changes.
+
+
+How would you collaborate without using Git or GitHub? What would be easier,
+and what would be harder?
+
+To collaborate without using Git or GitHub would be to do all communication and
+maintenance of code manually. Whenever I made a change to the code base I would
+have to make a copy of the original, make a change to that copy, send the copy
+to my collaborators (all of them!) and then wait for them to send me a response
+as to whether my changes conflicted with theirs. Of course, they would be
+simultaneously making changes too so I would have to do the same for their
+changes. This process would make learning how to use Git and GitHub seem a
+cakewalk by comparision!
+
+
+When would you want to make changes in a separate branch rather than directly
+in master? What benefits does each approach have?
+
+The benefit of being able to make changes in a separate branch multiplies with
+each contributor added to the project you are working on. Basically, if you
+have n contributors then you have n people with their own view of how the
+project should proceed, what features it should have and what changes should be
+ made. So you are just one of many people who might what to change things. So
+how do you manage all these different ideas as to how the project should go? The
+answer provided by GitHub is to set up a central repository above and beyond
+each local repository combined with methods for figuring out what the overall
+project should have in it and what it should not have. So, if you want to make a
+ change, then you create your own branch and make the change, debug it and then
+ do a pull request to others in the group to see if they are willing to pull
+your changes into the overall project. One thing that is interesting is if some
+people like your changes and others don't who decides whether the changes are
+incorporated? The usual answer seems to be that the project leader is the final
+arbitrator. I don't think GitHub has a voting system so there is no majority
+rules feature of GitHub, yet anyway. Anyway, without these features,
+collaboration on projects over the Internet would be very difficult.
